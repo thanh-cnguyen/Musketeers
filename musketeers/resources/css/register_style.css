@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "shella-rough";
+    src: url("../fonts/shella-rough.ttf");
+}
+
+@font-face {
+    font-family: "wander-yonder";
+    src: url("../fonts/wander-yonder.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    text-align: center;
+}
+
+a {
+    font-family: "calibri";
+    font-size: 14pt;
+    text-decoration: none;
+    color: #fc9b23;
+}
+
+.wrapper {
+
+    background-image: url("../images/backgrounds/login.jpg");
+    background-size: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    /*set up position*/
+    position: static;
+    top: 0;
+
+    /*set up propotionate scaling*/
+    width: 100%;
+    height: auto;
+
+    /*handle overlow content*/
+    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /*set up rules to fill the background*/
+    min-width: 960px;
+    min-height: 100%;
+}
+
+.login_header {
+    text-align: center;
+    color: #CA754A;
+    font-size: 45pt;
+    font-family: "shella-rough", cursive;
+}
+
+.login_header h1 {
+    margin: 55px auto 20px;
+}
+
+.login_box {
+    position: relative;
+    width: 25%;
+    background: rgba(255, 255, 255);
+    margin: 0px auto 30px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.login_box input[type="submit"] {
+    background-color: #fc9b23;
+    border: 1px solid #FF8C00;
+    border-radius: 3px;
+    padding: 4px 10px 4px 10px;
+    margin: 10px;
+
+    /*format font*/
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: "Bookman Old Style", monospace;
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    margin: 5px auto;
+    width: 86%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+
+/*Style the text input field*/
+input[type="text"] {
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    margin: 5px 2px;
+    width: 42%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+/*Hightlight input fields*/
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #fc9b23;
+}
+
+/*Glowing input fields*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #fc9b23;
+    box-shadow: 0 0 10px #fc9b23;
+}
+
+
+#second {
+    display: none;
+}

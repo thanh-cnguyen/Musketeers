@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "shella-rough";
+    src: url("../fonts/shella-rough.ttf");
+}
+
+body {
+    line-height: 25px;
+    background-color: #e8e2e2;
+}
+
+.top_bar {
+    position: fixed;
+    width: 100%;
+    min-width: 1050px;
+    height: 50px;
+    background-color: #ffb266;
+    border-bottom: 2.5px solid orange;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+}
+
+.logo a {
+    position: relative;
+    top: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30pt;
+    color: white;
+    font-family: "shella-rough", sans-serif;
+    text-shadow: black 1px 1px 0;
+}
+
+nav {
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #2c3e50
+}
+
+.wrapper {
+    margin: 0 auto;
+    top: 90px;
+    position: relative;
+    padding: 0 20px;
+    width: 80%;
+    min-width: 950px;
+}
+
+.col {
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #d3d3d3;
+    z-index: -1;
+}
+
+.user_info {
+    width: 270px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.user_info_left_right {
+    width: 125px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+}
+
+.user_info img {
+    height: 125px;
+    border-radius: 5px;
+}
+
+.user_info a {
+    text-decoration: none;
+}
+
+.main_col {
+    float: right;
+    width: 74%;
+    z-index: -1;
+    min-height: 160px;
+}
+
+.post_form {
+    width: 100%;
+}
+
+.post_form textarea {
+    width: 89%;
+    height: 60px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.post_form input[type="submit"] {
+    width: 7%;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fc9b23;
+    font-family: "Bookman Old Style", monospace;
+    font-weight: bold;
+    font-size: 90%;
+    color: #fff;
+    text-shadow: black 1px 1px 0;
+    position: absolute;
+    outline: 0;
+    margin: 0;
+}
+
+.post_form input[type="submit"]:active {
+    padding: 5px 4px 4px 5px;
+}
